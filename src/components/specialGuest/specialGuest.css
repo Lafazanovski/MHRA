@@ -39,8 +39,8 @@
     background-color: white;
     display: flex;
     align-items: center;
-    padding: 0.5em 1em;
-    gap: 20;
+    padding: 0.5em 0.9em;
+    gap: 10;
     border-radius: 50px;
     box-shadow: 0 0 20px grey;
     transition: 0.3s ease; 
@@ -74,29 +74,29 @@
 }
 
 .guestImageTopLeft {
-  background-image: url("/images/img9.png");
+  background-image: url("/images/majk.png");
   border-radius: 200 200 0 0;
 }
 
 .guestImageTopRight {
-  background-image: url("/images/img10.png");
+  background-image: url("/images/olivia.png");
   border-radius: 200 200 0 0;
 }
 
 .guestImageBottomLeft {
-  background-image: url("/images/img5.png");
+  background-image: url("/images/dzejms.png");
   border-radius: 0 0 200 200;
 }
 
 .guestImageBottomRight {
-  background-image: url("/images/img3.png");
+  background-image: url("/images/edna.png");
   border-radius: 0 0 200 200;
 }
 
 .guestInfoIcon {
     background-color: var(--primary-color);
-    padding: 1em;
-    border-radius: 50px;
+    padding: 0.8em;
+    border-radius: 50%;
     transition: 0.3s ease;
 
     &:hover {

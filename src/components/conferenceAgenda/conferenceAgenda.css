@@ -1,0 +1,32 @@
+.conferenceAgendaSection {
+    background-color: var(--backgroundSection-color);
+    margin-block: 3em;
+    padding-block: 2em;
+}
+
+.conferenceAgendaContainer {
+    padding: 2em;
+}
+
+.conferenceAgendaContainer h2 {
+    text-align: center;
+}
+
+.conferenceDays {
+    display: flex;
+    gap: 50;
+}
+
+.conferenceDays p {
+    transition: 0.3s ease;
+    cursor: pointer;
+
+    &:hover {
+        transform: scale(1.1);
+        color: var(--primary-color);
+    }
+}
+
+.conferenceDays span {
+    color: var(--primary-color);
+}

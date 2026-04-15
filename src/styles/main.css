@@ -18,7 +18,9 @@
 @import "../components/specialGuest/specialGuest.css";
 @import "../components/cardContainer/cardContainer.css";
 @import "../components/conference/conference.css";
+@import "../components/conferenceAgenda/conferenceAgenda.css";
 @import "../components/conferenceFacts/conferenceFacts.css";
+@import "../components/conferencePackages/conferencePackages.css";
 @import "../components/conferenceInfoComponent/conferenceInfoComponent.css";
 @import "../components/research/research.css";
 @import "../components/aboutUs/aboutUs.css";

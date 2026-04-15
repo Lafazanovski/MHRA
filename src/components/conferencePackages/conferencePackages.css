@@ -1,0 +1,53 @@
+.conferencePackagesSection {
+  background-color: var(--backgroundSection-color);
+  margin-block: 3em;
+  padding-block: 2em;
+}
+
+.conferencePackagesContainer {
+  text-align: center;
+}
+
+.conferencePackagesContainer h2 {
+  color: var(--primary-color);
+  font-size: 2em;
+}
+
+.packagesContainer {
+  display: flex;
+  justify-content: space-evenly;
+  margin-block: 3em;
+  padding-block: 1em;
+}
+
+.packageDiv {
+    background-color: white;
+  border: none;
+  border-radius: 200;
+  padding: 8em 3em;
+  box-shadow: 0 0 20px grey;
+  transition: 0.3s ease;
+  cursor: pointer;
+
+  &:hover {
+    transform: scale(1.03);
+  }
+}
+
+.packageDiv h4 {
+  font-size: 1.8em;
+  color: var(--secondary-color);
+  margin-top: 0.5em;
+}
+
+.packageDiv ul {
+  text-align: start;
+  font-weight: 700;
+  color: var(--secondary-color);
+  padding: 3em 2em;
+  height: 60%;
+}
+
+.packageDiv li {
+  padding-inline: 0.4em;
+}

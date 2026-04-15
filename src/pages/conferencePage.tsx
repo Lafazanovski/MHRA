@@ -1,6 +1,8 @@
 import Carousel from "@/components/carousel/carousel";
+import ConferenceAgenda from "@/components/conferenceAgenda/conferenceAgenda";
 import ConferenceFacts from "@/components/conferenceFacts/conferenceFacts";
 import ConferenceInfoComponent from "@/components/conferenceInfoComponent/conferenceInfoComponent";
+import ConferencePackages from "@/components/conferencePackages/conferencePackages";
 import HeroDetail from "@/components/heroDetail/heroDetail";
 import SimilarBlogs from "@/components/similarBlogs/similarBlogs";
 import SimilarEvents from "@/components/similarEvents/similarEvents";
@@ -19,6 +21,8 @@ const ConferencePage = () => {
       <ConferenceInfoComponent />
       <ConferenceFacts />
       <SpecialGuest />
+      <ConferenceAgenda />
+      <ConferencePackages />
       <SimilarBlogs />
       <SimilarEvents />
     </>

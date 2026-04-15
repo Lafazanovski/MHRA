@@ -37,3 +37,25 @@
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
   -webkit-background-filter: blur(10px);
 }
+
+/* PATTERN */ 
+
+.patternSection {
+  position: relative;
+}
+
+.patternSection::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100px;
+  background-image: radial-gradient(circle, #cccccc 2px, transparent 2px);
+  background-size: 25px 25px;
+  z-index: 0;
+}
+
+.patternSection::content {
+  position: relative;
+  z-index: 1;
+}
+
