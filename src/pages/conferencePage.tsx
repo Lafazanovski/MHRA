@@ -8,6 +8,7 @@ import HeroDetail from "@/components/heroDetail/heroDetail";
 import SimilarBlogs from "@/components/similarBlogs/similarBlogs";
 import SimilarEvents from "@/components/similarEvents/similarEvents";
 import SpecialGuest from "@/components/specialGuest/specialGuest";
+import Testimonials from "@/components/testimonials/testimonials";
 import React from "react";
 
 const ConferencePage = () => {
@@ -23,6 +24,7 @@ const ConferencePage = () => {
       <ConferenceFacts />
       <SpecialGuest />
       <ConferenceAgenda />
+      <Testimonials />
       <ConferencePackages />
       <ConferenceLocation />
       <SimilarBlogs />

@@ -14,3 +14,11 @@ export interface Member {
   company: string;
   image: string;
 }
+
+export interface Testimonial {
+  id: number;
+  name: string;
+  position: string;
+  paragraph: string;
+  image: string;
+}
