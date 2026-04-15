@@ -1,19 +1,120 @@
 .specialGuestSection {
-    background-color: var(--backgroundSection-color);
-    margin-block: 3em;
-    padding-block: 2em;
+  background-color: var(--backgroundSection-color);
+  margin-block: 3em;
+  padding-block: 2em;
 }
 
 .specialGuestContainer {
-    border: 1px solid black;
-    text-align: center;
-    padding-block: 1em;
+  text-align: center;
+  padding-block: 1em;
 }
 
 .specialGuestContainer h2 {
-    font-size: 1.7em;
+  font-size: 2em;
+  margin-bottom: 3em;
 }
 
 .specialGuestContainer p {
+  font-size: 0.9em;
+  width: 80%;
+  margin-inline: auto;
+}
+
+.guestsImagesTopDiv,
+.guestsImagesBottomDiv {
+  display: flex;
+  justify-content: space-evenly;
+  width: 90%;
+  gap: 80;
+  margin-block: 5em;
+  margin-inline: auto;
+}
+
+.guestsImagesTopLeftDiv, .guestsImagesBottomLeftDiv {
+    background-color: inherit;
+    position: relative;
+}
+
+.guestInfoDiv {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    padding: 0.5em 1em;
+    gap: 20;
+    border-radius: 50px;
+    box-shadow: 0 0 20px grey;
+    transition: 0.3s ease; 
+    cursor: pointer; 
+}
+
+.guestInfoDiv1, .guestInfoDiv3 {
+    position: absolute;
+    top: 60%;
+    right: 0;
+    transform: translateX(150);
+}
+
+.guestsImagesTopRightDiv, .guestsImagesBottomRightDiv {
+    background-color: inherit;
+    position: relative;
+}
+
+.guestInfoDiv2, .guestInfoDiv4 {
+    position: absolute;
+    top: 20%;
+    left: 0;
+    transform: translateX(-150);
+}
+
+.guestImage {
+  background-size: cover;
+  background-position: contain;
+  width: 350px;
+  height: 400px;
+}
+
+.guestImageTopLeft {
+  background-image: url("/images/img9.png");
+  border-radius: 200 200 0 0;
+}
+
+.guestImageTopRight {
+  background-image: url("/images/img10.png");
+  border-radius: 200 200 0 0;
+}
+
+.guestImageBottomLeft {
+  background-image: url("/images/img5.png");
+  border-radius: 0 0 200 200;
+}
+
+.guestImageBottomRight {
+  background-image: url("/images/img3.png");
+  border-radius: 0 0 200 200;
+}
+
+.guestInfoIcon {
+    background-color: var(--primary-color);
+    padding: 1em;
+    border-radius: 50px;
+    transition: 0.3s ease;
+
+    &:hover {
+        transform: scale(1.08);
+        box-shadow: 0 0 10px var(--primary-color);
+    }
+}
+
+.guestIcon {
+    color: white;
+    font-size: 1.5em;
+}
+
+.guestInfoText {
     font-size: 0.9em;
+}
+
+.guestInfoText p {
+    font-size: 0.6em;
+    opacity: 0.7;
 }
