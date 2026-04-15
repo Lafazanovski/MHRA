@@ -1,0 +1,6 @@
+
+.cultureSection {
+    background-color: var(--backgroundSection-color);
+    margin-block: 3em;
+    padding-block: 2em;
+}

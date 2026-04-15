@@ -1,0 +1,40 @@
+.eventsInfoSection {
+  background-color: var(--backgroundSection-color);
+  margin-block: 3em;
+  padding-block: 2em;
+}
+
+.eventsInfoTopDiv {
+  padding: 2em;
+  margin-block: 3em;
+}
+
+.eventsInfoTopDiv p {
+  text-transform: uppercase;
+}
+
+.eventsInfoBottomDiv {
+  display: flex;
+  gap: 100;
+}
+
+.eventsInfoBottomLeftDiv {
+  width: 50%;
+  padding: 1em;
+}
+
+.eventsInfoDescriptionDiv,
+.eventsInfoPurposeDiv {
+  margin-block: 2em;
+  padding: 2em;
+}
+
+.eventsInfoBottomRightDiv {
+  position: relative;
+  background-image: url("/images/img11.png");
+  background-size: cover;
+  background-position: center;
+  border-radius: 200;
+  width: 30%;
+  padding: 1em;
+}

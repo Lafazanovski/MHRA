@@ -1,0 +1,10 @@
+
+.cardContainer {
+    background-color: inherit;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3em 1em;
+    padding: 1em;
+    margin-block: 3em;
+    height: 90%;
+}

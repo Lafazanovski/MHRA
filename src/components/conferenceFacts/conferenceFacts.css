@@ -1,0 +1,51 @@
+.conferenceFactsSection {
+    background-color: var(--backgroundSection-color);
+    margin-block: 3em;
+    padding-block: 2em;
+}
+
+.conferenceFactsDiv {
+    background-color: white;
+    box-shadow: 0 10px 15px #76888B;
+    display: flex;
+    justify-content: space-evenly;
+    width: 80%;
+    margin-inline: auto;
+    padding: 2em 1em;
+    border-radius: 100;
+}
+
+.conferenceFact {
+    display: flex;
+    padding: 1em;
+    gap: 10;
+    align-items: center;
+}
+
+.conferenceFactIcon {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.factIcon {
+    color: var(--primary-color);
+    font-size: 2em;
+}
+
+.conferenceFactText {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+}
+
+.conferenceFactText h5 {
+    font-size: 1.5em;
+}
+
+.conferenceFactText p {
+    margin: 0;
+    color: #76888B;
+    font-size: 0.6em;
+}

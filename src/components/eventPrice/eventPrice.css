@@ -1,0 +1,66 @@
+.eventPriceSection {
+  background-color: var(--backgroundSection-color);
+  margin-block: 3em;
+  padding-block: 2em;
+}
+
+.eventPriceContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 50;
+}
+
+.eventPriceTopDiv {
+  display: flex;
+}
+
+.eventPriceTopLeftDiv,
+.eventPriceTopRightDiv {
+  width: 50%;
+  font-size: 1.8em;
+  text-align: center;
+}
+
+.eventPriceTopLeftDiv h2 {
+ border-radius: 30px 0 0 0;
+}
+
+.eventPriceTopRightDiv h2 {
+    border-radius: 0 30px 0 0;
+}
+
+.eventPriceTopLeftDiv h2,
+.eventPriceTopRightDiv h2 {
+    padding: 1.5em;
+    border: 1px solid #E6E6E6;
+    border-bottom: none;
+}
+
+.eventPriceTopLeftDiv h3,
+.eventPriceTopRightDiv h3 {
+    padding-block: 1em;
+
+}
+
+.eventPriceImageDiv {
+  position: relative;
+  background-image:  url("/images/priceImage.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 50vh;
+}
+
+.eventPriceBuyTicketDiv {
+  position: absolute;
+  right: 45%;
+  top: 15%;
+}
+
+.eventPriceShareWithFriendsDiv {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+

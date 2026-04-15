@@ -1,0 +1,38 @@
+* {
+  box-sizing: border-box;
+
+}
+
+html {
+  height: 100vh;
+  scroll-behavior: smooth;
+  margin-inline: auto;
+  max-width: 1400px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  letter-spacing: 1;
+}
+
+main {
+  padding-top: 100px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+ol,
+a {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}

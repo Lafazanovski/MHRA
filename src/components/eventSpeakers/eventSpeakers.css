@@ -1,0 +1,22 @@
+.eventSpeakersSection {
+    background-color: var(--backgroundSection-color);
+    margin-block: 3em;
+    padding-block: 2em;
+    height: 50vh;
+}
+
+.eventSpeakersContainer {
+    display: flex;
+    gap: 50;
+    height: 100%;
+}
+
+.eventSpeakersLeftDiv, .eventSpeakersRightDiv {
+    width: 50%;
+    height: 100%;
+    display: flex;
+}
+
+.eventSpeakersRightDiv {
+    justify-content: space-evenly;
+}

@@ -1,0 +1,142 @@
+/* ANIMATIONS */
+
+.autoShow {
+  animation: text-appear both;
+  animation-timeline: view();
+  animation-range: entry 20% cover 100vh;
+}
+
+@keyframes text-appear {
+  from {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ---------------------------------- */
+
+.fadeUp {
+  animation: fadeUp both;
+  animation-timeline: view();
+  animation-range: entry 10% cover 35%;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(10px) scale(0.5);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+/* ----------------------------------- */
+.fadeIn {
+  animation: fadeIn 2s ease;
+  animation-delay: 0.5s;
+  opacity: 0;
+  animation-fill-mode: forwards;
+  animation-timeline: view();
+  animation-range: entry 20% cover 40%;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* ----------------------------------- */
+
+.slideFromTop {
+  opacity: 0;
+  animation: slideFromTop 1s ease forwards;
+  animation-timeline: view();
+  animation-range: entry 20% cover 40%;
+  animation-delay: 1s;
+}
+
+@keyframes slideFromTop {
+  from {
+    opacity: 0;
+    transform: translateY(-200px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ------------------------------------ */
+
+.slideFromBottom {
+  opacity: 0;
+  animation: slideFromBottom 1s ease forwards;
+  animation-timeline: view();
+  animation-range: entry 20% cover 40%;
+  animation-delay: 1s;
+}
+
+@keyframes slideFromBottom {
+  from {
+    opacity: 0;
+    transform: translateY(-200px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ----------------------------------- */
+
+.slideFromLeft {
+  opacity: 0;
+  animation: slideFromLeft 4s ease forwards;
+  animation-timeline: view();
+  animation-range: entry 10% cover 30%;
+  animation-delay: 1s;
+}
+
+@keyframes slideFromLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-200px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* ------------------------------------ */
+
+.slideFromRight {
+  opacity: 0;
+  animation: slideFromRight 4s ease forwards;
+  animation-timeline: view();
+  animation-range: entry 10% cover 30%;
+  animation-delay: 1s;
+}
+
+@keyframes slideFromRight {
+  from {
+    opacity: 0;
+    transform: translateX(200px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* ------------------------------------- */

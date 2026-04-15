@@ -1,0 +1,101 @@
+
+.heroSection {
+    background-color: var(--backgroundSection-color);
+    box-shadow: 0 0 35px var(--backgroundSection-color);
+    position: relative;
+    height: 70vh;
+    margin-block: 0.1em;
+}
+
+.heroWrapper {
+    position: relative;
+    background-color: #e0fbff;
+    height: 100%;
+}
+
+.heroHeaderAndSignUpDiv {
+    position: absolute;
+    bottom: 30%;
+    right: 40%;
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    font-size: 0.8em;
+    gap: 10px;
+}
+
+.heroHeaderDiv {
+    background-color: white;
+    width: 100%;
+    padding: 1em 3em;
+    border-radius: 20px;
+    box-shadow: 0 0 25px grey;
+    transition: 0.3s ease;
+
+    &:hover {
+        background-color: rgba(255,255,255,0.5);
+        backdrop-filter: blur(10px);
+    }
+}
+
+.heroSignUpDiv {
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    width: 60%;
+    padding: 0.5em 1em;
+    align-self: end;
+    border-radius: 50px;
+    box-shadow: 0 0 25px grey;
+    transition: 0.3s ease;
+}
+
+.leftImg {
+    text-align: center;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: #bec6dc;
+    width: 30%;
+    height: 80%;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    overflow: hidden;
+}
+
+.rightImg {
+    text-align: center;
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-color: #bec6dc;
+    width: 50%;
+    height: 60%;
+    border-bottom-left-radius: 300px;
+    border-bottom-right-radius: 300px;
+    overflow: hidden;
+}
+
+.heroSocialMediaDiv {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    background-color: #21383E;
+    color: white;
+    width: 40%;
+    right: 0;
+    bottom: 0;
+    border-top-left-radius: 90px;
+    border-bottom-left-radius: 90px;
+    padding: 1em 5em;
+    box-shadow: 0 0 50px grey;
+}
+
+.heroSocialMediaIconsDiv {
+    display: flex;
+    gap: 20px;
+}
+
+.heroSocialMediaIconsDiv .socialMediaIcon {
+    font-size: 1.5em;
+}

@@ -1,0 +1,13 @@
+.aboutUsBoardSection {
+  background-color: var(--backgroundSection-color);
+  margin-block: 3em;
+  padding-block: 2em;
+}
+
+.memberCardDiv {
+  padding-block: 2em;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20;
+  height: 80vh;
+}

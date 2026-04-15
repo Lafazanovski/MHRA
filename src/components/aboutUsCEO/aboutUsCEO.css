@@ -1,0 +1,44 @@
+.aboutUsCeoSection {
+    background-color: var(--backgroundSection-color);
+    margin-block: 3em;
+    padding-block: 2em;
+}
+
+.aboutUsCeoContainer {
+    display: flex;
+    gap: 50;
+}
+
+.aboutUsCeoLeftDiv {
+    width: 30%;
+}
+
+.aboutUsCeoRightDiv {
+    width: 70%;
+}
+
+.aboutUsCeoImageDiv {
+    background-image: url("/images/darko.png");
+    width: 100%;
+    height: 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: top;
+}
+
+.aboutUsCeoRightDiv h4 {
+    font-size: 2em;
+    font-weight: 400;
+    margin-bottom: 0.5em;
+}
+
+.aboutUsCeoRightDiv h6 {
+    color: var(--primary-color);
+    font-size: 1.2em;
+    margin-bottom: 2em;
+}
+
+.aboutUsCeoRightDiv p {
+    font-size: 1em;
+    opacity: 0.8;
+}

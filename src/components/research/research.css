@@ -1,0 +1,14 @@
+
+.researchSection {
+  background-color: var(--backgroundSection-color);
+  padding-block: 2em;
+}
+
+.researchContainer {
+  background-color: var(--backgroundSection-color);
+  height: 100%;
+}
+
+
+
+

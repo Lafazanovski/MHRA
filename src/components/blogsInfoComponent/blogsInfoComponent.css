@@ -1,0 +1,37 @@
+
+
+.blogsInfoSection {
+    background-color: var(--backgroundSection-color);
+    box-shadow: 0 0 30px var(--backgroundSection-color);
+    padding-block: 3em;
+}
+
+.blogsInfoContainer {
+    display: flex;
+    gap: 20;
+}
+
+.blogsInfoLeftDiv {
+    width: 30%;
+    text-align: center;
+}
+
+.blogsInfoImg {
+    border-radius: 100 100 0 0;
+    object-fit: cover;
+}
+
+.blogsInfoRightDiv {
+    width: 70%;
+}
+
+.blogsInfoRightDiv h5 {
+    font-size: 2em;
+}
+
+.blogsInfoRightDiv p {
+    line-height: 2;
+    width: 80%;
+    opacity: 0.7;
+}
+

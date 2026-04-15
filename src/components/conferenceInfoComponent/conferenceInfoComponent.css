@@ -1,0 +1,103 @@
+.conferenceInfoSection {
+    background-color: var(--backgroundSection-color);
+    margin-block: 3em;
+    padding-block: 2em;
+}
+
+.conferenceInfoContainer {
+    display: flex;
+    gap: 17%;
+}
+
+.conferenceInfoLeftDiv {
+    position: relative;
+    width: 60%;
+    padding-right: 5em;
+}
+
+.conferenceInfoLeftDiv h1 {
+    margin-bottom: 1.5em;
+}
+
+.conferenceInfoLeftDiv p {
+    font-size: 1em;
+    opacity: 0.7;
+    margin-top: 2em;
+}
+
+.conferenceDateAndLocation {
+    display: flex;
+    gap: 40;
+}
+
+.conferenceDateAndLocation p {
+    margin-top: 0;
+}
+
+.conferenceInfoBuyTicketDiv {
+    position: absolute;
+    bottom: 0;
+    left: 30%;
+}
+
+.conferenceInfoRightDiv {
+    width: 40%;
+    height: 60vh;
+    padding: 2em;
+}
+
+.conferenceInfoRightDivImage {
+    position: relative;
+    background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url("/images/img1.png");
+    width: 100%;
+    height: 100%;
+    border-radius: 200 200 0 0;
+    background-size: cover;
+    background-position: center right;
+}
+
+.conferenceCircleImageDiv {
+    border: 1px solid black;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2em;
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+}
+
+.conferenceCircleImageLeftBottomDiv {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform: translateX(-100);
+}
+
+.conferenceCircleImageLeftBottom {
+    background-image: url("/images/img1.png");
+    background-size: cover;
+    background-position: right;
+}
+
+.conferenceCircleImageTopRightDiv {
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translateX(100);
+}
+
+.conferenceCircleImageTopRight {
+    background-image: url("/images/img2.png");
+    background-size: cover;
+    background-position: center;
+}
+
+.conferenceCircleImage {
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+}
+
+

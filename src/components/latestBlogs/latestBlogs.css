@@ -1,0 +1,146 @@
+.latestBlogsSection {
+  background-color: var(--backgroundSection-color);
+  margin-block: 3em;
+}
+
+.latestBlogsContainer {
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  gap: 50;
+}
+
+.latestBlogsSearchDiv {
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  gap: 20;
+}
+
+.latestBlogsFilterButtons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10;
+}
+
+.latestBlogsFilterBtn {
+  border: none;
+  background-color: white;
+  padding: 1em 2em;
+  font-size: 0.7em;
+  border-radius: 50px;
+  box-shadow: 0 0 20px grey;
+  cursor: pointer;
+  transition: 0.3s ease;
+
+  &:hover {
+    transform: scale(1.08);
+    outline: 2px solid var(--primary-color);
+  }
+}
+
+.activeButton {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+.latestBlogsHeadingAndSearchDiv {
+  display: flex;
+  justify-content: space-between;
+  padding-block: 2em;
+}
+
+.latestBlogsHeadingAndSearchDiv h2 {
+  font-size: 2em;
+}
+
+.latestBlogsHeadingAndSearchDiv input {
+  border: none;
+  border-radius: 50px;
+  padding: 1em;
+  width: 40%;
+  box-shadow: 0 0 25px grey;
+  transition: 0.3s ease;
+
+  &:hover {
+    transform: scale(1.05);
+  }
+}
+
+.latestBlogsCardsDiv {
+  display: flex;
+  gap: 50;
+}
+
+.latestBlogsCardsLeftDiv {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  gap: 50;
+}
+
+.latestBlogsCardsLeftTopDiv,
+.latestBlogsCardsLeftBottomDiv {
+  display: flex;
+  gap: 30;
+}
+
+.latestBlogsCarouselItem {
+  height: 100%;
+  width: 25%;
+  transition: 0.3s ease;
+  cursor: pointer;
+
+  &:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 35px grey;
+  }
+}
+
+.latestBlogsCardsRightDiv {
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("/images/img6.png");
+  background-size: cover;
+  background-position: center;
+  color: white;
+  padding: 3em;
+  width: 30%;
+  text-align: center;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  border-radius: 0 0 200px 200px;
+  transition: 0.3s ease;
+  cursor: pointer;
+
+  &:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 35px grey;
+  }
+}
+
+.latestBlogsCardsRightDiv h4 {
+  font-size: 1.5em;
+}
+
+.latestBlogsCardsRightDiv ul {
+  display: flex;
+  flex-direction: column;
+  gap: 20;
+  list-style-type: none;
+}
+
+.latestBlogsCardsRightDiv li {
+  transition: 0.3s ease;
+  cursor: pointer;
+  padding-block: 0.2em;
+
+  &:hover {
+    color: var(--primary-color);
+    transform: scale(1.05);
+    border-bottom: 1px solid var(--primary-color);
+  }
+}

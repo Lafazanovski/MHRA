@@ -1,0 +1,132 @@
+
+
+.aboutUsSection {
+  background-color: var(--backgroundSection-color);
+  box-shadow: 0 0 35px var(--backgroundSection-color);
+  padding-block: 2em;
+  margin-block: 5em;
+}
+
+.aboutUsContainer {
+  background-color: var(--backgroundSection-color);
+  box-shadow: 0 0 25px var(--backgroundSection-color);
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  gap: 20;
+}
+
+.aboutUsLeftDiv {
+  background-color: white;
+  border-radius: 50px;
+  box-shadow: 0 0 25px var(--backgroundSection-color);
+  padding: 3em;
+  width: 40%;
+}
+
+.aboutUsLeftImgDiv {
+  position: relative;
+  display: flex;
+  gap: 20;
+  margin-block: 3em;
+}
+
+.aboutUsLeftImg {
+  border-top-left-radius: 100px;
+  border-top-right-radius: 100px;
+}
+
+.aboutUsLeftBubbleText {
+  background-color: #7F7F7F;
+  position: absolute;
+  top: 100;
+  right: 30;
+  color: white;
+  padding: 0.5em 1em;
+  width: 50%;
+  font-size: 0.7em;
+  border-radius: 20px 20px 20px 0;
+  transition: 0.3s ease;
+
+  &:hover {
+    background-color: rgba(127, 127, 127, 0.5);
+    backdrop-filter: blur(10px);
+  }
+}
+
+.aboutUsRightDiv {
+  position: relative;
+  background-color: white;
+  box-shadow: 0 0 25px var(--backgroundSection-color);
+  border-radius: 40px;
+  padding: 1em;
+  width: 60%;
+}
+
+/* content */
+.aboutUsRightContentDiv {
+  position: absolute;
+  top: 40%;
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  width: 50%;
+  gap: 20;
+  z-index: 1;
+}
+
+.aboutUsRightBubbleText {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 0.5em 1em;
+  border-radius: 20px;
+  transition: 0.3s ease;
+
+  &:hover {
+    background-color: rgba(232, 123, 34, 0.7);
+    backdrop-filter: blur(10px);
+  }
+}
+
+.aboutUsRightBulletinDiv {
+  background-color: white;
+  padding: 0.6em 1em;
+  border-radius: 50px;
+  transition: 0.3s ease;
+
+  &:hover {
+    box-shadow: 0 0 20px white;
+    background-color: rgba(255,255,255,0.6);
+    backdrop-filter: blur(10px);
+  }
+}
+
+.bulletinButton {
+  display: flex;
+  align-items: center;
+  gap: 20;
+}
+
+.bulletinPrimaryButton {
+  border-radius: 50px;
+  font-size: 2em;
+  padding: 0.7em 1em;
+}
+
+.bulletinInfoDiv p {
+  font-size: 0.8em;
+}
+
+/* image */
+.aboutUsRightImgDiv {
+position: absolute;
+right: 20%;
+bottom: 0;
+}
+
+.aboutUsRightImg {
+  border-radius: 0 0 200px 200px;
+}
+
+

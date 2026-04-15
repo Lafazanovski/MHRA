@@ -1,0 +1,19 @@
+.specialGuestSection {
+    background-color: var(--backgroundSection-color);
+    margin-block: 3em;
+    padding-block: 2em;
+}
+
+.specialGuestContainer {
+    border: 1px solid black;
+    text-align: center;
+    padding-block: 1em;
+}
+
+.specialGuestContainer h2 {
+    font-size: 1.7em;
+}
+
+.specialGuestContainer p {
+    font-size: 0.9em;
+}

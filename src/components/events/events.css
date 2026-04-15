@@ -1,0 +1,9 @@
+.eventsSection {
+  background-color: var(--backgroundSection-color);
+  padding-block: 2em;
+}
+
+.eventsContainer {
+  background-color: var(--backgroundSection-color);
+  height: 100%;
+}

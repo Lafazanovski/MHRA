@@ -1,0 +1,45 @@
+@import "../components/header/header.css";
+@import "../components/footer/footer.css";
+@import "global.css";
+@import "commonClasses.css";
+@import "animations.css";
+@import "../components/hero/hero.css";
+@import "../components/heroDetail/heroDetail.css";
+@import "../components/carousel/carousel.css";
+@import "../components/blog/blog.css";
+@import "../components/joiningBenefits/joiningBenefits.css";
+@import "../components/events/events.css";
+@import "../components/eventPrice/eventPrice.css";
+@import "../components/memberCard/memberCard.css";
+@import "../components/eventsAgenda/eventsAgenda.css";
+@import "../components/eventSpeakers/eventSpeakers.css";
+@import "../components/eventsInfoComponent/eventsInfoComponent.css";
+@import "../components/card/card.css";
+@import "../components/specialGuest/specialGuest.css";
+@import "../components/cardContainer/cardContainer.css";
+@import "../components/conference/conference.css";
+@import "../components/conferenceFacts/conferenceFacts.css";
+@import "../components/conferenceInfoComponent/conferenceInfoComponent.css";
+@import "../components/research/research.css";
+@import "../components/aboutUs/aboutUs.css";
+@import "../components/aboutUsCEO/aboutUsCEO.css";
+@import "../components/aboutUsMission/aboutUsMission.css";
+@import "../components/aboutUsPurpose/aboutUsPurpose.css";
+@import "../components/aboutUsBoard/aboutUsBoard.css";
+@import "../components/culture/culture.css";
+@import "../components/calendar/calendar.css";
+@import "../components/hrEvents/hrEvents.css";
+@import "../components/blogContent/blogContent.css";
+@import "../components/blogComments/blogComments.css";
+@import "../components/similarBlogs/similarBlogs.css";
+@import "../components/similarEvents/similarEvents.css";
+@import "../components/latestBlogs/latestBlogs.css";
+@import "../components/allEventsSearch/allEventsSearch.css";
+@import "../components/blogsInfoComponent/blogsInfoComponent.css";
+
+:root {
+    --primary-color: #E87B22;
+    --secondary-color: #0F294A;
+    --backgroundSection-color: #e0fbff;
+}
+

@@ -1,0 +1,50 @@
+.joiningBenefits {
+  background-color: #e0fbff;
+  box-shadow: 0 0 30px #e0fbff;
+  margin-block: 5em;
+}
+
+.joiningBenefitsContainer {
+  display: flex;
+  gap: 5em;
+  padding-block: 2em;
+}
+
+.joiningBenefitsLeftDiv {
+  width: 60%;
+}
+
+.joiningBenefitsRightDiv {
+  width: 40%;
+}
+
+.reasonDiv {
+  display: flex;
+  align-items: center;
+  gap: 3em;
+  border-bottom: 1px solid #B4BBBD;
+  padding-block: 2em;
+}
+
+.reasonNumberDiv {
+    color: #B4BBBD;
+}
+
+.reasonTitleDiv {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+
+.reasonTitleDiv .readMoreBtn {
+    background-color: inherit;
+    border: none;
+    border-bottom: 1px solid #B4BBBD;
+    color: #B4BBBD;
+    transition: 0.3s ease;
+    cursor: pointer;
+
+    &:hover {
+        color: var(--primary-color);
+    }
+}

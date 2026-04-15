@@ -1,0 +1,54 @@
+.aboutUsMissionSection {
+    background-color: var(--backgroundSection-color);
+    margin-block: 3em;
+    padding-block: 2em;
+}
+
+.aboutUsMissionContainer {
+    display: flex;
+    padding-block: 1em;
+    gap: 50;
+}
+
+.aboutUsMissionLeftDiv {
+    width: 30%;
+    text-align: center;
+}
+
+.aboutUsMissionImage {
+    background-image: url("/images/img10.png");
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    border-radius: 200 200 0 0;
+}
+
+.aboutUsMissionRightDiv {
+    width: 70%;
+    font-size: 1.2em;
+}
+
+.aboutUsMissionRightDiv h1 {
+    text-transform: uppercase;
+    margin-bottom: 1em;
+}
+
+.aboutUsMissionRightDiv h5 {
+    margin-bottom: 2em;
+    font-size: 1.5em;
+    font-weight: 300;
+}
+
+.aboutUsMissionRightDiv p {
+    font-size: 0.9em;
+    opacity: 0.8;
+}
+
+.missionAndVisionParagraphsDiv {
+    font-size: 0.8em;
+}
+
+.missionAndVisionParagraphsDiv span {
+    color: var(--primary-color);
+}

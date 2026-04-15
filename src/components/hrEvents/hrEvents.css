@@ -1,0 +1,29 @@
+.hrEventsSection {
+  background-color: var(--backgroundSection-color);
+  margin-block: 3em;
+  padding-block: 6em;
+}
+
+.hrEventsContainer {
+  background-color: inherit;
+}
+
+.hrEventsHeadingDiv {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-inline: 2em;
+}
+
+.hrEventsHeadingDiv p {
+  border-bottom: 1px solid #bfbfbf;
+  color: #bfbfbf;
+  transition: 0.3s ease;
+  cursor: pointer;
+
+  &:hover {
+    transform: scale(1.05);
+    color: var(--primary-color);
+    border-bottom: 1px solid var(--primary-color);
+  }
+}

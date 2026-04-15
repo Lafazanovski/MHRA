@@ -1,0 +1,46 @@
+.eventsAgendaSection {
+    background-color: var(--backgroundSection-color);
+    margin-block: 3em;
+    padding-block: 2em;
+}
+
+.eventsAgendaContainer {
+    padding: 2em;
+}
+
+.eventsAgendaHeaderAndDateDiv {
+    border-bottom: 2px solid var(--primary-color);
+    display: flex;
+    flex-direction: column;
+    gap: 50;
+}
+
+.eventsAgendaScheduleDiv {
+    margin-block: 3em;
+}
+
+.eventsAgendaTimeFrame {
+    display: flex;
+    gap: 60;
+    margin-block: 2em;
+    padding-inline: 1em;
+    transition: 0.5s ease;
+
+    &:hover {
+        transform: translateX(2%);
+        color: var(--secondary-color);
+    }
+}
+
+.eventsAgendaTimeFrame span {
+    color: var(--primary-color);
+}
+
+.eventsAgendaTopic {
+    padding: 1em;
+}
+
+.eventsAgendaTopic h3 {
+    border-left: 3px solid var(--primary-color);
+    padding-inline: 0.5em;
+}

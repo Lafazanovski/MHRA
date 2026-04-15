@@ -1,0 +1,117 @@
+.blogContentSection {
+  background-color: var(--backgroundSection-color);
+  margin-top: 3em;
+  padding-block: 2em;
+}
+
+.blogContentContainer {
+  display: flex;
+  gap: 30;
+}
+
+.blogContentLeftDiv {
+  width: 70%;
+  padding: 1em;
+  padding-right: 5em;
+}
+
+.blogContentMainHeader {
+  font-size: 1.6em;
+  margin-bottom: 3em;
+}
+
+.blogContentMainHeader p {
+  font-size: 0.8em;
+}
+
+.blogContentTexts {
+  margin-block: 3em;
+}
+
+.blogContentTexts h3 {
+  transition: 0.3s ease;
+
+  &:hover {
+    transform: scale(1.02);
+    cursor: pointer;
+    color: var(--secondary-color);
+  }
+}
+
+.blogContentTexts p {
+  transition: 0.3s ease;
+
+  &:hover {
+    transform: scale(1.01);
+    cursor: pointer;
+  }
+}
+
+.blogContentRightDiv {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  gap: 30;
+  padding: 1em;
+}
+
+.blogContentImage {
+  border-radius: 0 0 200 200;
+  transition: 0.3s ease;
+
+  &:hover {
+    transform: scale(1.03);
+    cursor: pointer;
+    box-shadow: 0 0 20px grey;
+  }
+}
+
+.blogContentIconsDiv {
+  background-color: var(--primary-color);
+  color: white;
+  border-radius: 50px;
+  text-align: start;
+  padding: 0.5 3em;
+  transition: 0.3s ease;
+
+  &:hover {
+    transform: scale(1.02);
+    cursor: pointer;
+    box-shadow: 0 0 25px grey;
+  }
+}
+
+.blogContentIcons {
+  display: flex;
+  gap: 20;
+  align-items: center;
+  margin-block: 0.5em;
+  font-size: 1.5em;
+}
+
+.blogContentIconsDiv {
+  font-size: 0.7em;
+}
+
+.blogContentNavDiv {
+  padding: 1em;
+}
+
+.blogContentNavDiv h4 {
+  margin-block: 1em;
+  color: var(--primary-color);
+  border-left: 3px solid var(--primary-color);
+  padding: 1em;
+}
+
+.blogContentNavDiv p {
+  font-size: 0.8em;
+  margin-block: 2em;
+  transition: 0.3s ease;
+  cursor: pointer;
+
+  &:hover {
+    transform: scale(1.05);
+    color: var(--primary-color);
+  }
+}
