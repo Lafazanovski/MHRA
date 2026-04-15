@@ -20,6 +20,7 @@
 @import "../components/conference/conference.css";
 @import "../components/conferenceAgenda/conferenceAgenda.css";
 @import "../components/conferenceFacts/conferenceFacts.css";
+@import "../components/conferenceLocation/conferenceLocation.css";
 @import "../components/conferencePackages/conferencePackages.css";
 @import "../components/conferenceInfoComponent/conferenceInfoComponent.css";
 @import "../components/research/research.css";
