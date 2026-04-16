@@ -33,8 +33,7 @@ const Testimonials = () => {
             className="testimonialImage"
               src={person.image}
               alt={person.name}
-              width={200}
-              height={200}  
+              fill style={{objectFit: "cover"}}
             />
           </div>
         </div>

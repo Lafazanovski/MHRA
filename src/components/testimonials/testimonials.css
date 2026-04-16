@@ -6,33 +6,78 @@
 
 .testimonialContainer {
     display: flex;
+    align-items: center;
+    min-height: 400px;
     gap: 50;
 }
 
-.testimonialLeftDiv {  
-    width: 50%;
-    height: 30vh;
-    background-color: blue;
+.testimonialLeftDiv {
+    background-color: transparent;
+    border: 1px solid black;
+    border-radius: 200px;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 3em;
 }
 
 .testimonialRightDiv {
-    background-color: red;
+    background-color: inherit;
+    padding-block: 3em;
+    max-height: 50vh;
+}
+
+.testimonialRightDiv h2 {
+    font-size: 2em;
+    color: var(--primary-color);
+}
+
+.testimonialPosition {
+    color: grey;
+}
+
+.testimonialParagraph {
+    font-size: 0.8em;
+    margin-block: 3em;
+    width: 70%;
 }
 
 .testimonialImgDiv {
-    background-color: yellow;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 1em;
-    min-width: 70%;
-    margin-inline: auto;
+    position: relative;
+    width: 300px;
+    height: 300px;
+    flex-shrink: 0;
+    overflow: hidden;
 }
 
 .testimonialImage {
     border-radius: 200;
-    margin: 2em;
+    position: absolute;
+}
+
+.testimonialNav {
+    margin-top: 5em;
+    width: 30%;
+    padding: 1em;
+    color: grey;
+    transition: 0.3s ease;
+}
+
+.testimonialNavBtn {
+    font-size: 1.5em;
+    margin-inline: 0.5em;
+    background-color: inherit;
+    border: none;
+    color: grey;
+    transition: 0.3s ease;
+
+    &:hover {
+        cursor: pointer;
+        transform: scale(1.5);
+        color: var(--primary-color);
+        text-shadow: 0 0 20px var(--primary-color);
+    }
 }
