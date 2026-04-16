@@ -15,12 +15,10 @@ const UserPersonalInfo = () => {
 
   const handleLogOut = async () => {
     try {
-        console.log("Се одјавува...");
       await signOut(auth);
-        console.log("Одјавен!");
       router.push("/signUp");
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars
     } catch (err) {
-      console.error("LogOut грешка:", err);
     }
   };
 
