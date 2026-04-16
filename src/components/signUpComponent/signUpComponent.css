@@ -1,0 +1,34 @@
+.signUpSection {
+    background-color: var(--backgroundSection-color);
+    margin-block: 3em;
+    padding-block: 2em;
+}
+
+.signUpContainer {
+    border: 1px solid black;
+    height: 50vh;
+}
+
+
+
+/* -------------------------- */
+
+.passwordInputWrapper {
+    background-color: yellow;
+    padding: 2em;
+    width: 50%;
+}
+
+.inputPasswordField {
+    position: relative;
+    background-color: red;
+}
+
+.showPasswordBtn {
+    border: 3px solid blue;
+  position: absolute;
+  background: transparent;
+  cursor: pointer;
+  font-size: 10px;
+}
+/* ---------------------------- */

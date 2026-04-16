@@ -1,8 +1,12 @@
+import UserPersonalInfo from '@/components/userPersonalInfo/userPersonalInfo'
 import React from 'react'
 
 const UserDashboard = () => {
   return (
-    <div>UserDashboard</div>
+    <>
+    <UserPersonalInfo />
+    
+    </>
   )
 }
 

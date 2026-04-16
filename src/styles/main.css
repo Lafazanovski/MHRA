@@ -15,6 +15,7 @@
 @import "../components/eventSpeakers/eventSpeakers.css";
 @import "../components/eventsInfoComponent/eventsInfoComponent.css";
 @import "../components/card/card.css";
+@import "../components/userPersonalInfo/userPersonalInfo.css";
 @import "../components/testimonials/testimonials.css";
 @import "../components/specialGuest/specialGuest.css";
 @import "../components/cardContainer/cardContainer.css";
@@ -31,6 +32,7 @@
 @import "../components/aboutUsPurpose/aboutUsPurpose.css";
 @import "../components/aboutUsBoard/aboutUsBoard.css";
 @import "../components/culture/culture.css";
+@import "../components/signUpComponent/signUpComponent.css";
 @import "../components/calendar/calendar.css";
 @import "../components/hrEvents/hrEvents.css";
 @import "../components/blogContent/blogContent.css";
