@@ -27,20 +27,19 @@ const Testimonials = () => {
   return (
     <div className="testimonialSection">
       <div className="testimonialContainer wrapper">
-        <div className="testimonialLeft">
-          <span className="testimonialQuote"></span>
+        <div className="testimonialLeftDiv">
           <div className="testimonialImgDiv">
             <Image
             className="testimonialImage"
               src={person.image}
               alt={person.name}
-              width={300}
-              height={300}  
+              width={200}
+              height={200}  
             />
           </div>
         </div>
 
-        <div className="testimonialRight">
+        <div className="testimonialRightDiv">
           <h2 className="testimonialName">{person.name}</h2>
           <p className="testimonialPosition">{person.position}</p>
           <p className="testimonialParagraph">{person.paragraph}</p>
