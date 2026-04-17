@@ -17,8 +17,8 @@ const UserPersonalInfo = () => {
     try {
       await signOut(auth);
       router.push("/signUp");
-    // eslint-disable-next-line @typescript-eslint/no-unused-vars
     } catch (err) {
+      console.error(err)
     }
   };
 
@@ -75,12 +75,12 @@ const UserPersonalInfo = () => {
             </div>
             {/* Back Button */}
             <div className="backButtonDiv">
-              <button
-                onClick={() => router.push("/signUp")}
-                className="backBtn"
-              >
-                Назад
-              </button>
+                <button
+                  onClick={() => router.push("/signUp?from=dashboard")}
+                  className="backBtn"
+                >
+                  Назад
+                </button>
             </div>
             {/* Log Out Button */}
             <div className="logOutDiv">

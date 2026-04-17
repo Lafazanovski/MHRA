@@ -6,7 +6,7 @@ import {
   signInWithPopup,
 } from "firebase/auth";
 import { useRouter } from "next/router";
-import React, { useEffect, useState } from "react";
+import { useEffect, useState, FormEvent } from "react";
 
 const SignUpComponent = () => {
   const router = useRouter();
@@ -15,17 +15,23 @@ const SignUpComponent = () => {
   const [error, setError] = useState("");
   const [isLogin, setIsLogin] = useState(false);
   const [showPassword, setShowPassword] = useState(false);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
+      if (!router.isReady) return;
     const unsubscribe = onAuthStateChanged(auth, (user) => {
-      if (user) {
+      if (user && router.query.from !== "dashboard")  {
         router.push("/userDashboard");
+      } else {
+        setLoading(false);
       }
     });
     return () => unsubscribe();
-  }, [router]);
+  }, [router, router.isReady, router.query]);
 
-  const handleEmailSubmit = async (e: React.FormEvent) => {
+  if (loading) return null;
+
+  const handleEmailSubmit = async (e: FormEvent) => {
     e.preventDefault();
     setError("");
     try {
@@ -45,6 +51,7 @@ const SignUpComponent = () => {
   const handleGoogleSignUp = async () => {
     setError("");
     try {
+        googleProvider.setCustomParameters({ prompt: "select_account" });
       await signInWithPopup(auth, googleProvider);
       router.push("/userDashboard");
     } catch (err: unknown) {
@@ -78,25 +85,30 @@ const SignUpComponent = () => {
                 <div className="orDiv">
                   <p>Или</p>
                 </div>
-                <p className="signUpToggle">
-                  {isLogin ? "Немаш профил?" : "Веќе имаш профил?"}
-                  <button
-                    onClick={() => setIsLogin(!isLogin)}
-                    className="signUpToggleBtn"
-                  >
-                    {isLogin ? "Регистрирај се" : "Најави се"}
-                  </button>
-                </p>
+                {/* Toggle Div */}
+                <div className="toggleDiv">
+                  <p className="signUpToggle">
+                    {isLogin ? "Немаш профил?" : "Веќе имаш профил?"}
+                    <button
+                      onClick={() => setIsLogin(!isLogin)}
+                      className="signUpToggleBtn"
+                    >
+                      {isLogin ? "Регистрирај се" : "Најави се"}
+                    </button>
+                  </p>
+                <h3>{isLogin ? "Најави се:" : "Креирај нов профил:"}</h3>
+                </div>
               </div>
-              {/* Email */}
-              <h3>{isLogin ? "Најави се" : "Креирај профил"}</h3>
+              {/* Form */}
               <form onSubmit={handleEmailSubmit} className="signUpForm">
                 <div className="signUpInputDiv">
-                  <label htmlFor="email">Е-маил</label>
+                  {/* Email */}
+                  <label htmlFor="email">e-маил</label>
                   <input
                     type="email"
                     id="email"
-                    placeholder="Емаил"
+                    placeholder="mhra@primer.com"
+                    className="emailInputField"
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
                     required
@@ -104,12 +116,12 @@ const SignUpComponent = () => {
                 </div>
                 {/* Password */}
                 <div className="signUpInputDiv">
-                  <label htmlFor="password">Лозинка</label>
+                  <label htmlFor="password">лозинка</label>
                   <div className="passwordInputWrapper">
                     <input
                       type={showPassword ? "text" : "password"}
                       id="password"
-                      placeholder="Внеси лозинка"
+                      placeholder="внеси лозинка"
                       className="inputPasswordField"
                       value={password}
                       onChange={(e) => setPassword(e.target.value)}
@@ -118,13 +130,12 @@ const SignUpComponent = () => {
                     <button
                       type="button"
                       onClick={() => setShowPassword(!showPassword)}
-                      className="showPasswordBtn"
-                    >
+                      className="showPasswordBtn">
                       {showPassword ? "👁️" : "👁️‍🗨️"}
                     </button>
                   </div>
                 </div>
-                <button type="submit" className="primaryButton SignUpButton">
+                <button type="submit" className="primaryButton signUpButton continueWithMailButton">
                   Продолжи со овој email
                 </button>
               </form>
