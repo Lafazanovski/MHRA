@@ -9,6 +9,7 @@ import React from "react";
 import { auth } from "@/lib/firebase";
 import { signOut } from "firebase/auth";
 import { useRouter } from "next/router";
+import Link from "next/link";
 
 const UserPersonalInfo = () => {
   const router = useRouter();
@@ -18,7 +19,7 @@ const UserPersonalInfo = () => {
       await signOut(auth);
       router.push("/signUp");
     } catch (err) {
-      console.error(err)
+      console.error(err);
     }
   };
 
@@ -55,7 +56,7 @@ const UserPersonalInfo = () => {
                 <div className="jobIcon">
                   <FontAwesomeIcon icon={faUser} className="personalInfoIcon" />
                 </div>
-                <p>HR Регрутер</p>
+                <p>+389 72 432 456</p>
               </div>
               <div className="CvDiv personalInfoDiv">
                 <div className="jobIcon">
@@ -64,29 +65,34 @@ const UserPersonalInfo = () => {
                     className="personalInfoIcon"
                   />
                 </div>
-                <p>+389 70 481 440</p>
+                <p>mhra@primer.com</p>
               </div>
               <div className="CvDiv personalInfoDiv">
                 <div className="jobIcon">
                   <FontAwesomeIcon icon={faGear} className="personalInfoIcon" />
                 </div>
-                <p>Поставки</p>
+                <Link href="/userDashboard">
+                  <p className="userDashboardSettingsButton">Поставки</p>
+                </Link>
               </div>
             </div>
-            {/* Back Button */}
-            <div className="backButtonDiv">
+            {/* Back and Logout Div */}
+            <div className="backAndLogoutDiv">
+              {/* Back Button */}
+              <div className="backButtonDiv">
                 <button
                   onClick={() => router.push("/signUp?from=dashboard")}
                   className="backBtn"
                 >
                   Назад
                 </button>
-            </div>
-            {/* Log Out Button */}
-            <div className="logOutDiv">
-              <button onClick={handleLogOut} className="logOutBtn">
-                Одјави се
-              </button>
+              </div>
+              {/* Log Out Button */}
+              <div className="logOutDiv">
+                <button onClick={handleLogOut} className="logOutBtn">
+                  Одјави се
+                </button>
+              </div>
             </div>
           </div>
           {/* Right */}
@@ -95,36 +101,34 @@ const UserPersonalInfo = () => {
             <div className="shortBioDiv">
               <h2>Кратка Биографија</h2>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Commodi, magnam. Unde suscipit pariatur ducimus fugit mollitia
-                consectetur autem illo architecto accusantium aperiam voluptates
-                velit, earum ipsam? Ducimus ullam facilis esse necessitatibus
-                quam nam hic perferendis eveniet repudiandae, quo ipsa et quia
-                sunt a laudantium aliquam blanditiis animi similique? Culpa,
-                eligendi.
+                Јас сум Валентина Стојанова, искусен HR регрутер со над 10 години работно искуство во полето на човечките ресурси. Својата кариера ја започнав како помлад HR асистент и со текот на годините напредував, стекнувајќи богато знаење и вештини во регрутирањето и управувањето со таленти. Позната сум по мојот професионализам, одлична комуникација и способност да пронајдам и привлечам врвни таленти за различни индустрии. Работев со големи компании, помагајќи им да изградат силни и ефикасни тимови. Со посветеност кон мојата професија и постојана желба за усовршување, се стремам да бидам  лидер и ментор во областа на HR.
               </p>
             </div>
             {/* Recommendations */}
             <div className="recommendationsDiv">
+              <h3>Препораки</h3>
               {/* 1 */}
-              <div className="recommendation1">
+              <div className="recommendation1 recommendation">
                 <div className="recommendationImageAndNameDiv">
-                  <div className="recommendationImageDiv">$$$</div>
+                  <div className="recommendationImageDiv recommendationImageDiv1"></div>
                   <div className="recommendationNameDiv">
-                    <h3>Фрањо</h3>
+                    <h4>Фрањо</h4>
                     <p>Пред 9 минути</p>
                   </div>
                 </div>
+                <p>Со задоволство ја препорачувам Валентина како извонредерн HR регрутер. Нејзината способност да идентификува и привлече врвни таленти е ненадминлива.
+                </p>
               </div>
               {/* 2 */}
-              <div className="recommendation2">
+              <div className="recommendation2 recommendation">
                 <div className="recommendationImageAndNameDiv">
-                  <div className="recommendationImageDiv">$$$</div>
+                  <div className="recommendationImageDiv recommendationImageDiv2"></div>
                   <div className="recommendationNameDiv">
-                    <h3>Бобан</h3>
+                    <h4>Бобан</h4>
                     <p>Пред 15 минути</p>
                   </div>
                 </div>
+                <p>Валентина е извонреден HR професионалец кој постојано покажува посветеност и страст конј својата работа. Со нејзината способност да препознае и регрутира талантирани индивидуи, таа ни помогна да изградиме силни и успешни тимови.</p>
               </div>
             </div>
           </div>
