@@ -1,0 +1,62 @@
+.signUpBenefitsSection {
+    background-color: var(--backgroundSection-color);
+    margin-block: 3em;
+    padding-block: 6em;
+}
+
+.signUpBenefitsTopDiv, 
+.signUpBenefitsBottomDiv {
+    display: flex;
+    padding-block: 1em;
+}
+
+.signUpBenefitsTopLeftDiv, 
+.signUpBenefitsTopRightDiv {
+    width: 50%;
+    height: 30vh;
+}
+
+.signUpBenefitsTopLeftImage {
+    background-image: url("/images/signUpLeft.png");
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: contain;
+}
+
+.signUpBenefitsTopRightDiv {
+    padding-inline: 10em;
+}
+
+.signUpBenefitsTopRightDiv h2 {
+    margin-bottom: 1.5em;
+    font-size: 1.8em;
+    font-weight: 400;
+}
+
+.signUpBenefitsBottomLeftDiv, 
+.signUpBenefitsBottomRightDiv {
+    width: 50%;
+    height: 30vh;
+}
+
+.signUpBenefitsBottomLeftDiv h2 {
+    margin-bottom: 1.5em;
+    font-size: 1.8em;
+    font-weight: 400;
+}
+
+.signUpBenefitsBottomLeftDiv ul {
+    font-size: 1em;
+    margin-inline: 2em;
+}
+
+.signUpBenefitsBottomRightImage {
+    background-image: url("/images/signUpRight.png");
+    width: 100%;
+    height: 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: start;
+}
+
