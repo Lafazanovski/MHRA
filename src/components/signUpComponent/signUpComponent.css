@@ -4,10 +4,6 @@
     padding-block: 2em;
 }
 
-.signUpContainer {
-    border: 1px solid black;
-}
-
 .signUpBoxDiv {
     width: 45%;
     margin-inline: auto;
@@ -19,8 +15,6 @@
 .signUpBoxDiv h2 span {
     font-weight: 300;
 }
-
-/* -------------------------- */
 
 .signUpWithGoogleButton {
     background-color: inherit;
@@ -40,8 +34,6 @@
         transform: scale(1.05);
     }
 }
-
-/* -------------------------- */
 
 .toggleDiv {
     margin-block: 3em 1em;
@@ -69,7 +61,6 @@
     }
 }
 
-/* -------------------------- */
 .signUpInputDiv {
     display: flex;
     flex-direction: column;
@@ -125,8 +116,6 @@
     font-size: 1.05em;
     letter-spacing: 1;
 }
-
-/* ---------------------------- */
 
 .checkDiv {
     text-align: start;
