@@ -24,10 +24,10 @@ export const purchasedTickets: PurchasedTicket[] = [
 ];
 
 export const connections: Connection[] = [
-  { id: 1, name: "Марко", image: "/images/img1.png" },
-  { id: 2, name: "Валери", image: "/images/img2.png" },
-  { id: 3, name: "Марија", image: "/images/img3.png" },
-  { id: 4, name: "Ана", image: "/images/img4.png" },
-  { id: 5, name: "Алексан", image: "/images/img5.png" },
-  { id: 6, name: "Благо", image: "/images/img6.png" },
+  { id: 1, name: "Јована Б.", image: "/images/olgica.png" },
+  { id: 2, name: "Влатко М.", image: "/images/ljupco.png" },
+  { id: 3, name: "Борче К.", image: "/images/majk.png" },
+  { id: 4, name: "Јовче Ј.", image: "/images/dzejms.png" },
+  { id: 5, name: "Анабела П.", image: "/images/img9.png" },
+  { id: 6, name: "Баже К.", image: "/images/darko.png" },
 ];

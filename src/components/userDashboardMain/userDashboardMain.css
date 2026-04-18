@@ -12,7 +12,6 @@
 .dashboardLeft {
   display: flex;
   flex-direction: column;
-  background-color: yellow;
   gap: 1rem;
   flex: 1;
 }
@@ -31,6 +30,11 @@
   padding: 1.5rem;
   border: 1px solid #f0f0f0;
   box-shadow: 0 0 20px grey;
+  transition: 0.3s ease;
+  
+  &:hover {
+    transform: scale(1.03);
+  }
 }
 
 .dashboardCardHeading {
@@ -57,9 +61,13 @@
   align-items: center;
   width: 100px;
   height: 100px;
+    transition: 0.3s ease;
+  
+  &:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+  }
 }
-
-
 
 .badgeItemInner {
   width: 50px;
@@ -113,6 +121,12 @@ border: 7px solid #B68D50;
   align-items: center;
   gap: 20;
   padding: 1em;
+    transition: 0.3s ease;
+  
+  &:hover {
+    transform: scale(1.03);
+    cursor: pointer;
+  }
 }
 
 .latestBadgeImage {
@@ -125,32 +139,107 @@ border: 7px solid #B68D50;
   background-color: var(--primary-color);
 }
 
+.connectionsSearchDiv {
+  display: flex;
+  align-items: center;
+  gap: 20;
+}
+
+.connectionsSearchDiv label {
+  font-size: 0.9em;
+}
+
+.connectionsSearch {
+  padding: 0.5em 1em;
+  font-size: 0.8em;
+  border-radius: 50px;
+  border: none;
+  box-shadow: 0 0 10px grey;
+}
+
+.dashboardSubtitleAndButtonDiv {
+  display: flex;
+  padding-block: 1em;
+  justify-content: space-between;
+  margin-block: 1em;
+}
+
+.dashboardCardSubtitle {
+  margin-block: 0;
+}
+
+.connectionsList {
+  display: flex;
+}
+
+.connectionItem {
+  width: 30%;
+    transition: 0.3s ease;
+  
+  &:hover {
+    transform: scale(1.08);
+    cursor: pointer;
+  }
+}
+
 .ticketItem {
   display: flex;
   gap: 1rem;
+  font-size: 0.8em;
   align-items: center;
   margin-bottom: 1rem;
+  background-color: white;
+  border-radius: 20px;
+  padding: 1em;
+  border: none;
+  box-shadow: 0 0 10px grey;
+  margin-block: 1em;
+    transition: 0.3s ease;
+  
+  &:hover {
+    transform: scale(1.02);
+    cursor: pointer;
+    background-color: var(--backgroundSection-color);
+  }
 }
 
 .ticketImgDiv {
   position: relative;
-  width: 50px;
-  height: 50px;
-  border-radius: 8px;
+  width: 80px;
+  height: 80px;
+  border-radius: 0 0 50 50;
   overflow: hidden;
   flex-shrink: 0;
 }
 
 .discountCard {
   display: flex;
-  justify-content: space-around;
+  background-color: white;
+  justify-content: space-evenly;
   align-items: center;
 }
 
+.discountItem {
+  background-color: white;
+  text-align: center;
+  border: none;
+  padding-block: 1em;
+  width: 40%;
+  border-radius: 20px;
+  box-shadow: 0 0 20px grey;
+    transition: 0.3s ease;
+  
+  &:hover {
+    transform: scale(1.03);
+    cursor: pointer;
+  }
+}
+
 .discountNumber {
-  font-size: 2rem;
+  font-size: 5rem;
   font-weight: 700;
-  color: #d85a30;
+  color: var(--secondary-color);
+  margin: 0;
 }
 
 .connectionImgDiv {
@@ -180,6 +269,7 @@ border: 7px solid #B68D50;
   min-height: 80px;
   border: 1px solid #e0e0e0;
   border-radius: 8px;
+  border: none;
   padding: 10px;
   resize: none;
 }
@@ -191,9 +281,20 @@ border: 7px solid #B68D50;
   margin-top: 8px;
 }
 
+.feedbackAttachBtn {
+  padding: 1em;
+  font-size: 1.2em;
+  color: var(--secondary-color);
+  border: none;
+  background-color: inherit;
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+
 .dashboardSeeAllBtn {
   border: none;
   background-color: inherit;
   color: grey;
   border-bottom: 1px solid grey;
 }
+
