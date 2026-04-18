@@ -1,54 +1,114 @@
 .calendarSection {
   background-color: var(--backgroundSection-color);
   margin-block: 3em;
+  padding-block: 2em;
 }
 
 .calendarContainer {
-  background-color: inherit;
-  padding: 2em;
   display: flex;
-  gap: 20;
+  align-items: center;
+  gap: 10em;
 }
 
-.calendarLeftDiv {
+.calendarLeft {
   width: 40%;
-  background-color: white;
-  border-radius: 10px;
-  padding: 1em;
+  padding: 3em;
 }
 
-.calendarLeftDiv h2 {
-    font-size: 2em;
-    line-height: 1.5;
+.calendarLeft h2 {
+  font-size: 28px;
+  font-weight: 500;
+  margin-bottom: 2rem;
 }
 
-.calendarLeftDiv p {
-    font-size: 0.8em;
-    margin-top: 3em;
-    opacity: 0.8;
+.calendarLeft p {
+  color: #888;
+  font-size: 14px;
+  line-height: 1.6;
 }
 
-.calendarRightDiv {
+.calendarRight {
   width: 60%;
+  border: 0.5px solid #e0e0e0;
+  border-radius: 16px;
+  padding: 1.5rem;
 }
 
 .calendarBox {
   display: flex;
+  gap: 20;
 }
 
-.calendarBoxLeftSide,
-.calendarBoxRightSide {
+.calendarBoxLeft {
   width: 50%;
-  height: 300px;
-  background-color: white;
-  border: 1px solid grey;
-  border-radius: 10px;
-  padding: 2em;
-  box-shadow: 0 0 25px grey;
+  border: none;
+  box-shadow: 0 0 5px grey;
+  border-radius: 20px;
+}
+
+.calendarBoxRight {
+  width: 50%;
+}
+
+.calendarLabel {
+  font-size: 13px;
+  color: #888;
+  margin-bottom: 1rem;
+}
+
+.calendarHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.calendarNavBtn {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  color: #888;
+}
+
+.calendarTable {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: center;
+  font-size: 13px;
+}
+
+.calendarTable th {
+  color: #888;
+  font-weight: 400;
+  padding: 6px;
   transition: 0.3s ease;
   cursor: pointer;
 
   &:hover {
     transform: scale(1.05);
+    background-color: grey;
+    color: white;
   }
+}
+
+.calendarTable td {
+  padding: 6px;
+  cursor: pointer;
+  border-radius: 50%;
+  transition: 0.3s ease;
+  cursor: pointer;
+
+  &:hover {
+    transform: scale(1.05);
+    background-color: grey;
+    color: white;
+  }
+}
+
+.calendarEventDay {
+  border-radius: 50%;
+  font-weight: 500;
 }
