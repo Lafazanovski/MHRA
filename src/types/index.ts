@@ -1,5 +1,3 @@
-
-
 export interface BlogPost {
   id: number;
   title: string;
@@ -20,5 +18,25 @@ export interface Testimonial {
   name: string;
   position: string;
   paragraph: string;
+  image: string;
+}
+
+export interface Badge {
+  id: number;
+  image: string;
+  name: string;
+}
+
+export interface PurchasedTicket {
+  id: number;
+  image: string;
+  title: string;
+  date: string;
+  location: string;
+}
+
+export interface Connection {
+  id: number;
+  name: string;
   image: string;
 }
