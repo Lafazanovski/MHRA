@@ -18,8 +18,13 @@ const Footer = () => {
           <div className="footerLeftDiv footerDiv">
             <div className="navbarLogo">
               <Link href="/">
-                              <Image src="/images/logo.png" alt='logo' width={50} height={60} />
-                            </Link>
+                <Image
+                  src="/images/logo.png"
+                  alt="logo"
+                  width={50}
+                  height={60}
+                />
+              </Link>
             </div>
             <div className="footerInfoDiv">
               <div className="footerAddressDiv">
@@ -28,7 +33,7 @@ const Footer = () => {
                 <p>1000 Скопје, Македонија</p>
               </div>
               <div className="footerEmailDiv">
-                <h4>Е-маил</h4>
+                <h4>E-mail</h4>
                 <p>contact@mhra.mk</p>
               </div>
             </div>
@@ -39,13 +44,13 @@ const Footer = () => {
               <form action="#">
                 <label htmlFor="email">
                   {" "}
-                  <h3>Претплати се на билтен</h3>
+                  <h3>Претплати се на билтер</h3>
                 </label>
                 <input
                   type="text"
                   name="email"
                   id="email"
-                  placeholder="Е-маил"
+                  placeholder="Билтен"
                 />
               </form>
             </div>

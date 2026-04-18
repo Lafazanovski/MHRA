@@ -1,3 +1,5 @@
+import { faLink } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Link from "next/link";
 import React from "react";
 
@@ -47,9 +49,9 @@ const EventsInfoComponent = ({
             </div>
             <div className="eventsInfoBottomRightDiv">
               <div className="conferenceBuyTicketDiv">
-                <Link href="/">
+                <Link href="/singleEventPage">
                   <button className="buyTicketBtn">
-                    <div className="conferencePrimaryButton">$</div>
+                    <div className="conferencePrimaryButton"> <FontAwesomeIcon icon={ faLink } /> </div>
                     <div className="buyTicketBtnDiv">
                       <p>
                         <strong>Купи Карта</strong>

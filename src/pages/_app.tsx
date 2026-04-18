@@ -12,7 +12,7 @@ const roboto = Roboto({
   weight: ['400', '500', '600', '700', '800'] 
 })
 
-export default function App({ Component, pageProps }: AppProps) {
+  export default function App({ Component, pageProps }: AppProps) {
   return (
     <>
     <main className={roboto.className}> 
@@ -23,3 +23,5 @@ export default function App({ Component, pageProps }: AppProps) {
     </>
   );
 }
+
+

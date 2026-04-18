@@ -85,19 +85,19 @@ const Header = () => {
                         <Link href="/">Членство</Link>
                       </li>
                       <li>
-                        <Link href="/">Огранок на коучинг</Link>
+                        <Link href="/">Коучинг</Link>
                       </li>
                       <li>
                         <Link href="/">Галерија</Link>
                       </li>
                       <li>
-                        <Link href="/">Огласи за работа</Link>
+                        <Link href="/">Огласи</Link>
                       </li>
                       <li>
-                        <Link href="/">HR Награди</Link>
+                        <Link href="/">Награди</Link>
                       </li>
                       <li>
-                        <Link href="/">Е-весник</Link>
+                        <Link href="/">Вести</Link>
                       </li>
                       <li>
                         <Link href="/">Архива</Link>
@@ -112,14 +112,17 @@ const Header = () => {
                 {/* 2nd Dropdown */}
                 <li className="dropdown">
                   <button onClick={() => toggleDropdown("edukativni")}>
-                    <Link href="/aboutUs" className={`navigationLink ${isActive("/aboutUs") ? "activeLink" : ""}`}>
+                    <Link
+                      href="/aboutUs"
+                      className={`navigationLink ${isActive("/aboutUs") ? "activeLink" : ""}`}
+                    >
                       <span>Едукативни содржини</span>
                     </Link>
                   </button>
                   {openDropdown === "edukativni" && (
                     <ul className="dropdownMenu">
                       <li>
-                        <Link href="/">Статии</Link>
+                        <Link href="/">Артикли</Link>
                       </li>
                       <li>
                         <Link href="/">Истражувања</Link>
@@ -128,10 +131,10 @@ const Header = () => {
                         <Link href="/">Интервјуа</Link>
                       </li>
                       <li>
-                        <Link href="/">Обуки</Link>
+                        <Link href="/">Тренинг</Link>
                       </li>
                       <li>
-                        <Link href="/">Македонски Академии</Link>
+                        <Link href="/">Академија</Link>
                       </li>
                       <li>
                         <Link href="/">Проекти</Link>
@@ -150,7 +153,7 @@ const Header = () => {
                     href="/conferencePage"
                     className={`navigationLink ${isActive("/conferencePage") ? "activeLink" : ""}`}
                   >
-                    <span>Годишна Конференција</span>
+                    <span>Годишна конференција</span>
                   </Link>
                 </li>
 
@@ -245,12 +248,15 @@ const Header = () => {
                 )}
               </div>
               <div className="languageToggleButtonDiv">
-                <button className="languageToggleButton">MK / EN</button>
+                <button
+                  className="languageToggleButton">
+                МК/EN
+                </button>
               </div>
               <div className="signUpButtonDiv">
                 <Link href="/signUp">
                   <button className="primaryButton signUpButton">
-                    ЗАЧЛЕНИ СЕ
+                    Зачлени се
                   </button>
                 </Link>
               </div>

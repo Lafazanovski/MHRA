@@ -1,3 +1,5 @@
+import { faLink } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Link from "next/link";
 import React from "react";
 
@@ -22,9 +24,9 @@ const EventPrice = () => {
             <div className="eventPriceImageDiv">
               <div className="eventPriceBuyTicketDiv">
                 <div className="conferenceBuyTicketDiv">
-                  <Link href="/">
+                  <Link href="/singleEventPage">
                     <button className="buyTicketBtn">
-                      <div className="conferencePrimaryButton">$</div>
+                      <div className="conferencePrimaryButton"> <FontAwesomeIcon icon={ faLink }/></div>
                       <div className="buyTicketBtnDiv">
                         <p>
                           <strong>Купи Карта</strong>
@@ -36,7 +38,7 @@ const EventPrice = () => {
                 </div>
               </div>
               <div className="eventPriceShareWithFriendsDiv">
-                <Link href="/"><button className="primaryButton">Предложи на пријател</button></Link>
+                <Link href="/singleEventPage"><button className="primaryButton">Предложи на пријател</button></Link>
               </div>
             </div>
           </div>

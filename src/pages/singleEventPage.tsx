@@ -15,7 +15,8 @@ interface SingleEventPageProps {
 const defaultEvent: BlogPost = {
   id: 0,
   title: "Hr Кафе - настан",
-  paragraph: "Одбери го твојот омилен настан.",
+  paragraph:
+    "Овој четврток кафе на тема како да примените техники и чекори од селф коучинг за подобро да се водите себеси... / 25 Јули, 2024",
   image: "/images/img8.png",
 };
 

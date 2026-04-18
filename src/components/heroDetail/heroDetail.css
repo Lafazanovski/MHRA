@@ -40,6 +40,10 @@
   width: 50%;
 }
 
+.heroDetailTextDiv p {
+  width: 50%;
+}
+
 .heroDetailTextDiv span {
   color: var(--primary-color);
 }
