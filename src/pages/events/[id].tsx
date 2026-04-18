@@ -2,6 +2,7 @@
 import { BlogPost } from "@/types";
 import { GetServerSideProps } from "next";
 import SingleEventPage from "../singleEventPage";
+import { eventsPosts } from "@/data/events";
 
 interface SingleEventProps {
     event: BlogPost;
@@ -14,10 +15,9 @@ const SingleEvent = ({ event }: SingleEventProps) => {
 export const getServerSideProps: GetServerSideProps = async (context) => {
     const { id } = context.params!;
 
-    const res = await fetch(`http://localhost:3000/api/events?id=${id}`);
-    const json = await res.json();
+    const event = eventsPosts.find((post) => post.id === Number(id))
 
-    if (!json.success) {
+    if (!event) {
         return {
             notFound: true
         }
@@ -25,7 +25,7 @@ export const getServerSideProps: GetServerSideProps = async (context) => {
 
     return {
         props: {
-            event: json.data,
+            event,
         },
     };
 };

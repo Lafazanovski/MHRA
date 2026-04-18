@@ -1,10 +1,7 @@
 import { BlogPost } from "@/types";
 import BlogArticle from "../blogArticle";
 import { GetServerSideProps } from "next";
-
-
-
-
+import { blogPosts } from "@/data/blogs";
 
 interface BlogPageProps {
     blog: BlogPost;
@@ -17,16 +14,15 @@ const BlogPage = ({blog}: BlogPageProps ) => {
 export const getServerSideProps: GetServerSideProps = async (context) => {
     const { id } = context.params!;
 
-    const res = await fetch(`http://localhost:3000/api/blogs?id=${id}`);
-    const json = await res.json();
+    const blog = blogPosts.find((post) => post.id === Number(id))
 
-    if (!json.success) {
+    if (!blog) {
         return { notFound: true };
     }
 
     return {
         props: {
-            blog: json.data,
+            blog,
         }
     }
 }
