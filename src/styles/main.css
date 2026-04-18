@@ -32,6 +32,7 @@
 @import "../components/aboutUsPurpose/aboutUsPurpose.css";
 @import "../components/aboutUsBoard/aboutUsBoard.css";
 @import "../components/culture/culture.css";
+@import "../components/settingsModal/settingsModal.css";
 @import "../components/signUpComponent/signUpComponent.css";
 @import "../components/signUpBenefits/signUpBenefits.css";
 @import "../components/calendar/calendar.css";
