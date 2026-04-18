@@ -76,8 +76,9 @@
 .emailInputField {
     width: 100%;
     padding: 1em;
-    border-radius: 50px;
     border: none;
+    box-shadow: 0 0 5px grey;
+    border-radius: 50px;
 }
 
 .emailInputField:focus {
@@ -86,6 +87,8 @@
 
 .passwordInputWrapper {
     display: flex;
+    box-shadow: 0 0 5px grey;
+    border-radius: 50px;
 }
 
 .inputPasswordField {

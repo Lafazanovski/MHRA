@@ -284,7 +284,7 @@ border: 7px solid #B68D50;
 .feedbackAttachBtn {
   padding: 1em;
   font-size: 1.2em;
-  color: var(--secondary-color);
+  color: grey;
   border: none;
   background-color: inherit;
   transition: 0.3s ease;
