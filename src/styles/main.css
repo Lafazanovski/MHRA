@@ -49,6 +49,6 @@
 :root {
     --primary-color: #E87B22;
     --secondary-color: #0F294A;
-    --backgroundSection-color: #e0fbff;
+    --backgroundSection-color: inherit;
 }
 

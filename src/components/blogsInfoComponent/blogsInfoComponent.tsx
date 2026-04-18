@@ -8,7 +8,7 @@ const BlogsInfoComponent = () => {
         <div className="blogsInfoContainer wrapper">
           <div className="blogsInfoLeftDiv">
             <Image
-              src="/images/img5.png"
+              src="/images/img10.png"
               alt="Blogs Info Img"
               className="blogsInfoImg"
               width={200}
@@ -17,7 +17,7 @@ const BlogsInfoComponent = () => {
           </div>
           <div className="blogsInfoRightDiv">
             <h5>
-              Биди активен/на, споделувај настани на социјалните медиуми,
+              Биди <span>активен/а</span>, споделувај настани на социјалните медиуми,
               собирај поени, добивај значки и рамки, кани пријатели на настани и
               освојувај попусти за следната купена карта.
             </h5>

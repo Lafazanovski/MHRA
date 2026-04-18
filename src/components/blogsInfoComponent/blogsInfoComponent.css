@@ -16,6 +16,7 @@
     text-align: center;
 }
 
+
 .blogsInfoImg {
     border-radius: 100 100 0 0;
     object-fit: cover;
@@ -27,6 +28,10 @@
 
 .blogsInfoRightDiv h5 {
     font-size: 2em;
+}
+
+.blogsInfoRightDiv span {
+    color: var(--primary-color);
 }
 
 .blogsInfoRightDiv p {

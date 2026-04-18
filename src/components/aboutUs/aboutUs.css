@@ -1,15 +1,11 @@
 
-
 .aboutUsSection {
   background-color: var(--backgroundSection-color);
-  box-shadow: 0 0 35px var(--backgroundSection-color);
-  padding-block: 2em;
-  margin-block: 5em;
+  margin-block: 3em;
+  padding-block: 6em;
 }
 
 .aboutUsContainer {
-  background-color: var(--backgroundSection-color);
-  box-shadow: 0 0 25px var(--backgroundSection-color);
   height: 100%;
   display: flex;
   flex-direction: row;
@@ -19,7 +15,6 @@
 .aboutUsLeftDiv {
   background-color: white;
   border-radius: 50px;
-  box-shadow: 0 0 25px var(--backgroundSection-color);
   padding: 3em;
   width: 40%;
 }
@@ -32,8 +27,21 @@
 }
 
 .aboutUsLeftImg {
-  border-top-left-radius: 100px;
-  border-top-right-radius: 100px;
+  background-image: url("/images/img10.png");
+  width: 300px;
+  height: 400px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 200 200 0 0;
+}
+
+.aboutUsRightImg {
+  background-image: url("/images/img9.png");
+  width: 300px;
+  height: 400px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 0 0 200 200;
 }
 
 .aboutUsLeftBubbleText {
@@ -109,9 +117,9 @@
 }
 
 .bulletinPrimaryButton {
-  border-radius: 50px;
-  font-size: 2em;
-  padding: 0.7em 1em;
+  border-radius: 100px;
+  font-size: 1em;
+  padding: 1em;
 }
 
 .bulletinInfoDiv p {

@@ -44,7 +44,7 @@ const Footer = () => {
               <form action="#">
                 <label htmlFor="email">
                   {" "}
-                  <h3>Претплати се на билтер</h3>
+                  <h3>Претплати се на билтен</h3>
                 </label>
                 <input
                   type="text"

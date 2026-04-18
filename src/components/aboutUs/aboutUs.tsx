@@ -1,6 +1,7 @@
 import React from "react";
-import Image from "next/image";
 import Link from "next/link";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faLink } from "@fortawesome/free-solid-svg-icons";
 
 const AboutUs = () => {
   return (
@@ -11,13 +12,6 @@ const AboutUs = () => {
           <div className="aboutUsLeftDiv">
             <div className="aboutUsLeftImgDiv">
               <div className="aboutUsLeftImg">
-                <Image
-                  src="/images/img3.png"
-                  alt="About Us Left Img"
-                  className="aboutUsLeftImg"
-                  width={200}
-                  height={250}
-                />
               </div>
               <div className="aboutUsLeftBubbleText">
                 <p>
@@ -50,7 +44,7 @@ const AboutUs = () => {
                 <Link href="/">
                   <div className="bulletinButton">
                     <div className="bulletinPrimaryButtonDiv">
-                      <button className="primaryButton bulletinPrimaryButton">$</button>
+                      <button className="primaryButton bulletinPrimaryButton"> <FontAwesomeIcon icon={ faLink } /> </button>
                     </div>
                     <div className="bulletinInfoDiv">
                       <p>
@@ -64,13 +58,6 @@ const AboutUs = () => {
             </div>
             <div className="aboutUsRightImgDiv">
               <div className="aboutUsRightImg">
-                <Image
-                  src="/images/img4.png"
-                  alt="About Us Right Img"
-                  className="aboutUsRightImg"
-                  width={300}
-                  height={400}
-                />
               </div>
             </div>
           </div>
