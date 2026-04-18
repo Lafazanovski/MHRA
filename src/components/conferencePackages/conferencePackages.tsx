@@ -16,7 +16,7 @@ const ConferencePackages = () => {
                     <li>Пауза за ручек</li>
                     <li>WiFi</li>
                 </ul>
-                <Link href="/">
+                <Link href="/conferencePage">
                 <button className='primaryButton'>Купи Карта</button>
                 </Link>
             </div>
@@ -29,13 +29,13 @@ const ConferencePackages = () => {
                     <li>Пауза за ручек</li>
                     <li>WiFi</li>
                 </ul>
-                <Link href="/">
+                <Link href="/conferencePage">
                 <button className='primaryButton'>Купи Карта</button>
                 </Link>
             </div>
           </div>
           <div className="ShareWithFriendsButton">
-            <Link href="/">
+            <Link href="/conferencePage">
               <button className="primaryButton">Предложи на пријател</button>
             </Link>
           </div>

@@ -1,3 +1,5 @@
+import { faLink } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Link from 'next/link';
 import React from 'react'
 
@@ -23,9 +25,9 @@ const ConferenceInfoComponent = () => {
               унапредат работната ефикасност.{" "}
             </p>
             <div className="conferenceInfoBuyTicketDiv">
-              <Link href="/">
+              <Link href="/conferencePage">
                 <button className="buyTicketBtn">
-                  <div className="conferencePrimaryButton">$</div>
+                  <div className="conferencePrimaryButton"><FontAwesomeIcon icon={ faLink }/></div>
                   <div className="buyTicketBtnDiv">
                     <p>
                       <strong>Купи Карта</strong>

@@ -21,9 +21,13 @@ const BlogArticle = ({ blog = defaultBlog }: BlogArticleProps) => {
 
   return (
     <>
-      <HeroDetail title={blog.title} subtitle={blog.paragraph} image="/images/img3.png" />
+      <HeroDetail
+        title={blog.title}
+        subtitle={blog.paragraph}
+        image="/images/img3.png"
+      />
       <Carousel />
-      <BlogContent />
+      <BlogContent title={blog.title} paragraph={blog.paragraph} />
       <BlogComments />
       <SimilarBlogs />
     </>

@@ -40,6 +40,21 @@
     left: 30%;
 }
 
+.buyTicketBtn {
+    box-shadow: 0 0 10px grey;
+}
+
+.conferencePrimaryButton {
+    font-size: 1.5em;
+    border-radius: 100;
+    padding-block: 1em;
+}
+
+.buyTicketBtnDiv {
+    font-size: 0.9em;
+    padding-inline: 1em;
+}
+
 .conferenceInfoRightDiv {
     width: 40%;
     height: 60vh;

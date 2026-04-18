@@ -22,9 +22,13 @@ const defaultEvent: BlogPost = {
 const SingleEventPage = ({ event = defaultEvent }: SingleEventPageProps) => {
   return (
     <>
-      <HeroDetail title={event.title} subtitle={event.paragraph} image="/images/img4.png" />
+      <HeroDetail
+        title={event.title}
+        subtitle={event.paragraph}
+        image="/images/img4.png"
+      />
       <Carousel />
-      <EventsInfoComponent />
+      <EventsInfoComponent title={event.title} paragraph={event.paragraph} />
       <EventsAgenda />
       <EventSpeakers />
       <EventPrice />

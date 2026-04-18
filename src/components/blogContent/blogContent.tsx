@@ -7,7 +7,12 @@ import {
   faXTwitter,
 } from "@fortawesome/free-brands-svg-icons";
 
-const BlogContent = () => {
+interface BlogContentProps {
+  title: string;
+  paragraph: string;
+}
+
+const BlogContent = ({ title, paragraph }: BlogContentProps) => {
   return (
     <>
       <div className="blogContentSection">
@@ -15,14 +20,8 @@ const BlogContent = () => {
           {/* left Div */}
           <div className="blogContentLeftDiv">
             <div className="blogContentMainHeader">
-              <h2>Како до најдобар избор при процесот на регрутација?</h2>
-              <p>
-                Процесот на регрутација е клучен за успехот на секоја
-                организација. Селекцијата на вистинските кандидати може
-                значително да влијае на продуктивноста, културата и развојот на
-                компанијата. Следните чекори и совети ќе ви помогнат да
-                направите најдобар избор при регрутацијата.
-              </p>
+              <h2>{title}</h2>
+              <p>{paragraph}</p>
             </div>
             {/* 1 */}
             <div className="blogContentTexts">

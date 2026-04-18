@@ -78,7 +78,7 @@ const SpecialGuest = () => {
           </div>
           {/* All Speakers Button */}
           <div className="AllSpeakersButton">
-            <Link href="/">
+            <Link href="/conferencePage">
               <button className="primaryButton">Сите Спикери</button>
             </Link>
           </div>
