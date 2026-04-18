@@ -5,14 +5,24 @@ import {
   faUser,
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { auth } from "@/lib/firebase";
-import { signOut } from "firebase/auth";
+import { onAuthStateChanged, signOut } from "firebase/auth";
 import { useRouter } from "next/router";
 import Link from "next/link";
 
 const UserPersonalInfo = () => {
-  const router = useRouter();
+   const router = useRouter();
+   const [userEmail, setUserEmail] = useState("");
+
+   useEffect(() => {
+     const unsubscribe = onAuthStateChanged(auth, (user) => {
+       if (user) {
+         setUserEmail(user.email || ""); 
+       }
+     });
+     return () => unsubscribe();
+   }, []);
 
   const handleLogOut = async () => {
     try {
@@ -32,8 +42,8 @@ const UserPersonalInfo = () => {
             {/* image, Name, City */}
             <div className="ImageNameCityDiv">
               <div className="personalImageDiv"></div>
-              <h2>Валентина С.</h2>
-              <p>Битола</p>
+              <h2>{userEmail}</h2>
+              <p>Скопје</p>
             </div>
             {/* Job, CV */}
             <div className="jobAndCvDiv">
@@ -101,7 +111,7 @@ const UserPersonalInfo = () => {
             <div className="shortBioDiv">
               <h2>Кратка Биографија</h2>
               <p>
-                Јас сум Валентина Стојанова, искусен HR регрутер со над 10 години работно искуство во полето на човечките ресурси. Својата кариера ја започнав како помлад HR асистент и со текот на годините напредував, стекнувајќи богато знаење и вештини во регрутирањето и управувањето со таленти. Позната сум по мојот професионализам, одлична комуникација и способност да пронајдам и привлечам врвни таленти за различни индустрии. Работев со големи компании, помагајќи им да изградат силни и ефикасни тимови. Со посветеност кон мојата професија и постојана желба за усовршување, се стремам да бидам  лидер и ментор во областа на HR.
+                Јас сум {userEmail}, искусен HR регрутер со над 10 години работно искуство во полето на човечките ресурси. Својата кариера ја започнав како помлад HR асистент и со текот на годините напредував, стекнувајќи богато знаење и вештини во регрутирањето и управувањето со таленти. Позната сум по мојот професионализам, одлична комуникација и способност да пронајдам и привлечам врвни таленти за различни индустрии. Работев со големи компании, помагајќи им да изградат силни и ефикасни тимови. Со посветеност кон мојата професија и постојана желба за усовршување, се стремам да бидам  лидер и ментор во областа на HR.
               </p>
             </div>
             {/* Recommendations */}

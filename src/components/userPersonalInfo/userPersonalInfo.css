@@ -23,6 +23,13 @@
     border: none;
     text-align: center;
     padding: 1em 3em;
+    overflow: hidden;
+}
+
+.ImageNameCityDiv h2 {
+     word-break: break-all;
+     overflow-wrap: break-word;
+     width: 100%;
 }
 
 .personalImageDiv {
