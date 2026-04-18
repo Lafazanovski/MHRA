@@ -54,8 +54,9 @@
   z-index: 0;
 }
 
-.patternSection::content {
-  position: relative;
+.patternSection::before {
+  content: "";
+  position: absolute;
   z-index: 1;
 }
 
