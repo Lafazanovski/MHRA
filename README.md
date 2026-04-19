@@ -1,40 +1,87 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/pages/api-reference/create-next-app).
+# MHRA — Macedonian Human Resources Association
+# МАЧР - Македонска асоцијација за човечки ресурси
 
-## Getting Started
+Веб апликација за Македонска Асоцијација за Човечки Ресурси, изградена со Next.js и TypeScript.
 
-First, run the development server:
+🔗 **Live Demo:** https://mhra-project-nu.vercel.app
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+---
+
+## Технологии
+
+- **Next.js** (Pages Router)
+- **TypeScript**
+- **React**
+- **Firebase Authentication**
+- **CSS** (модуларен, BEM методологија)
+- **Font Awesome** (икони)
+- **Vercel** (хостирање)
+
+---
+
+## Структура на проектот
+
+```
+src/
+  components/       ← React компоненти
+  pages/            ← Страни и API Routes
+  data/             ← Mock податоци
+  types/            ← TypeScript интерфејси
+  utils/            ← Помошни функции
+  context/          ← Language Context
+  lib/              ← Firebase конфигурација
+  styles/           ← CSS стилови
+public/
+  images/           ← Слики
+  locales/          ← Преводи (МК/ЕН)
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+## Страни
 
-[API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+| Страна | Опис |
+|--------|------|
+| `/` | Почетна страна |
+| `/blogs` | Листа на блогови |
+| `/blogs/[id]` | Единечен блог (динамичка рута) |
+| `/eventListing` | Листа на настани |
+| `/events/[id]` | Единечен настан (динамичка рута) |
+| `/conferencePage` | Годишна конференција |
+| `/aboutUs` | За нас |
+| `/signUp` | Регистрација / Логирање |
+| `/userDashboard` | Кориснички профил |
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) instead of React pages.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/pages/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## API Routes
 
-## Learn More
+| Рута | Опис |
+|------|------|
+| `/api/blogs` | Враќа рандом блогови или блог по ID |
+| `/api/events` | Враќа рандом настани или настан по ID |
+| `/api/members` | Враќа членови на одборот |
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn-pages-router) - an interactive Next.js tutorial.
+## Клучни функционалности
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### Mock Data систем
+Апликацијата користи локални податоци (`src/data/`) кои се сервираат преку Next.js API Routes. Секој пат кога се вчитува страна, се прикажуваат рандом избрани содржини.
 
-## Deploy on Vercel
+### Динамички рути
+Со клик на картичка, корисникот се пренасочува на `/blogs/[id]` или `/events/[id]` каде се прикажуваат деталите за избраната содржина.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Firebase Authentication
+- Регистрација со Email и лозинка
+- Логирање со Email и лозинка
+- Логирање со Google
+- Одјавување
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/pages/building-your-application/deploying) for more details.
+
+---
+
+## Автор
+
+**Kristijan Lafazanovski** — FE23
+Brainster Front-End Development Academy
