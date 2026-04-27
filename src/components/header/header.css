@@ -12,7 +12,8 @@
   z-index: 1000;
 }
 
-.navbar, .scrolled {
+.navbar,
+.scrolled {
   background-color: rgba(255, 255, 255, 0.4);
   backdrop-filter: blur(10px);
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
@@ -61,12 +62,9 @@
 }
 
 .activeLink span {
-  
   color: var(--primary-color);
   border-bottom: 1px solid var(--primary-color);
 }
-
-
 
 /* Dropdown */
 
@@ -175,4 +173,94 @@
   justify-content: space-between;
   align-items: center;
   gap: 10px;
+}
+
+.hamburgerBtn {
+  display: none;
+  border: none;
+  cursor: pointer;
+  color: grey;
+  background-color: transparent;
+  font-size: 1.5em;
+}
+
+/* ---------- Media Queries ------------- */
+
+@media (max-width: 1100px) {
+  .navigationUl {
+    align-items: center;
+    gap: 8px;
+  }
+
+  .navigationUl li {
+    font-size: 0.7em;
+  }
+
+  .signUpButton {
+    font-size: 0.7em;
+    padding: 0.5em 0.8em;
+  }
+}
+
+@media (max-width: 768px) {
+  .hamburgerBtn {
+    display: block;
+  }
+
+  .navigationBarLinks {
+    display: none;
+    position: absolute;
+    top: 6em;
+    left: 0;
+    right: 0;
+    background-color: white;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    padding: 1em;
+    z-index: 999;
+  }
+
+  .signUpDiv {
+    gap: 6px;
+  }
+
+  .navigationBarLinks.menuOpen {
+    display: block;
+  }
+
+  .navigationUl {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0;
+  }
+
+  .navigationUl li {
+    font-size: 0.9em;
+    width: 100%;
+    padding: 0.8em 0;
+    border-bottom: 1px solid #f0f0f0;
+  }
+
+  .dropdownMenu {
+    position: static;
+    box-shadow: none;
+    padding-left: 1em;
+  }
+
+  .signUpButtonDiv {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbarContainer {
+    padding: 0 1em;
+  }
+
+  .signUpButton {
+    display: none;
+  }
+
+  .languageToggleButton {
+    font-size: 0.8em;
+  }
 }

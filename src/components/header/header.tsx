@@ -1,7 +1,7 @@
 import Link from "next/link";
 import React, { useEffect, useRef, useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faMagnifyingGlass, faBell } from "@fortawesome/free-solid-svg-icons";
+import { faMagnifyingGlass, faBell, faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
 import { useRouter } from "next/router";
 import Image from "next/image";
 
@@ -11,7 +11,18 @@ const Header = () => {
 
   const [isScrolled, setIsScrolled] = useState(false);
   const [openDropdown, setOpenDropdown] = useState<string | null>(null);
+   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const navRef = useRef<HTMLElement>(null);
+
+useEffect(() => {
+  const handleRouteChange = () => {
+    setIsMenuOpen(false);
+    setOpenDropdown(null);
+  };
+
+  router.events.on("routeChangeStart", handleRouteChange);
+  return () => router.events.off("routeChangeStart", handleRouteChange);
+}, [router.events]);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -64,7 +75,7 @@ const Header = () => {
               </Link>
             </div>
             {/* 2 */}
-            <div className="navigationBarLinks">
+            <div className={`navigationBarLinks ${isMenuOpen ? "menuOpen" : ""}`}>
               <ul className="navigationUl">
                 {/* 1st Dropdown */}
                 <li className="dropdown">
@@ -248,10 +259,7 @@ const Header = () => {
                 )}
               </div>
               <div className="languageToggleButtonDiv">
-                <button
-                  className="languageToggleButton">
-                МК/EN
-                </button>
+                <button className="languageToggleButton">МК/EN</button>
               </div>
               <div className="signUpButtonDiv">
                 <Link href="/signUp">
@@ -260,6 +268,13 @@ const Header = () => {
                   </button>
                 </Link>
               </div>
+
+              <button
+                className="hamburgerBtn"
+                onClick={() => setIsMenuOpen(!isMenuOpen)}
+              >
+                <FontAwesomeIcon icon={isMenuOpen ? faXmark : faBars} />
+              </button>
             </div>
           </div>
         </nav>
