@@ -94,3 +94,68 @@
   border-top-left-radius: 50%;
   border-top-right-radius: 50%;
 }
+
+/* ------------------------------------- */
+
+@media (max-width: 768px) {
+  .blogImgLeftDiv, 
+  .blogImgRightDiv {
+    display: none;
+  }
+
+  .blogDivTopLeft, .blogDivBottomRight {
+    display: none;
+  }
+
+  .blogDivTopRight {
+    grid-area: 1/1/1/6;
+    width: 100%;
+  }
+
+  .blogDivBottomLeft {
+    grid-area: 5/6/2/1;
+    text-align: center;
+  }
+
+  .blogImgBottomDiv {
+    left: 25%;
+    bottom: -10%;
+  }
+
+  .ourBlogDiv {
+    width: 80%;
+    left: 50;
+    margin-top: 1em;
+  }
+}
+
+@media (max-width: 580px) {
+  .ourBlogDiv {
+    font-size: 0.8em;
+    width: 90%;
+    margin-inline: auto;
+    left: 0;
+  }
+
+  .blogImgBottomDiv {
+    margin-inline: auto;
+    left: 0;
+    bottom: -20%;
+    width: 80%;
+  }
+}
+
+@media(max-width: 425px) {
+  .blogImgBottomDiv {
+    left: 0;
+    width: 100%;
+    bottom: -40%;
+  }
+  .ourBlogDiv {
+    font-size: 0.8em;
+    width: 100%;
+    left: 0;
+    right: 0;
+  }
+  
+}

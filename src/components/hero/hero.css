@@ -127,4 +127,28 @@
     .heroSocialMediaDiv {
         width: 70%;
     }
+
+    .leftImg {
+        width: 50%;
+
+    }
+
+    .rightImg {
+        width: 30%;
+    }
+}
+
+@media (max-width: 600px) {
+    .leftImg {
+        width: 100%;
+    }
+
+    .rightImg {
+        display: none;
+    }
+
+    .heroSocialMediaDiv {
+        width: 90%;
+        font-size: 0.8em;
+    }
 }
