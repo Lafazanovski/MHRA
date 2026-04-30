@@ -63,3 +63,37 @@
     transition: 0.3s ease;
     transform: scale(1.05);
 }
+
+@media (max-width: 768px) {
+    .footerContainer {
+        flex-direction: column;
+    }
+
+     .footerContainer .navbarLogo {
+        text-align: center;
+        display: flex;
+        justify-content: center;
+    }
+
+     .footerInfoDiv {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+
+    .footerFormDiv {
+        text-align: center;
+    }
+
+    .socialMediaIconsDiv {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 425px) {
+    .footerInfoDiv {
+        display: flex;
+        flex-direction: column;
+    }
+}

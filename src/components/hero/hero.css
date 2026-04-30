@@ -97,3 +97,34 @@
 .heroSocialMediaIconsDiv .socialMediaIcon {
     font-size: 1.5em;
 }
+
+/* ---------------------------------------- */
+
+@media  (max-width: 1100px ) {
+    .heroSignUpDiv {
+        width: 100%;
+    }
+}
+
+@media  (max-width: 768px) {
+    .heroHeaderAndSignUpDiv {
+        left: 0;
+        width: 70%;
+        height: 60%;
+        top: 30;
+        position: relative;
+    }
+
+    .heroHeaderDiv {
+        width: 70%;
+    }
+
+    .heroSignUpDiv {
+        position: absolute;
+        bottom: 0;
+    }
+
+    .heroSocialMediaDiv {
+        width: 70%;
+    }
+}
